@@ -40,6 +40,30 @@ export class HomeComponent {
       image: './img.png',
       link: 'https://luminatewebsol.com/',
     },
+    {
+      title: 'Eiddo Power',
+      description: 'Luminate Web Solutions is a company offering expert web development services and digital transformation for businesses.',
+      image: './Eiddo-Logo.png',
+      link: 'https://eiddopower.com/',
+    },
+    {
+      title: 'Speed House Desgin',
+      description: 'Luminate Web Solutions is a company offering expert web development services and digital transformation for businesses.',
+      image: './Speed-House-logo.png',
+      link: 'https://speedhousedesign.com',
+    },
+    {
+      title: 'Lagom Interio',
+      description: 'Luminate Web Solutions is a company offering expert web development services and digital transformation for businesses.',
+      image: './Lagom-logo.jpg',
+      link: 'https://lagominterio.com/',
+    },
+    {
+      title: 'XLNC Contracting',
+      description: 'Luminate Web Solutions is a company offering expert web development services and digital transformation for businesses.',
+      image: './XLNC-Logo.jpg',
+      link: 'https://xlnccontracting.com/',
+    },
    
   ];
 

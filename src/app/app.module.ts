@@ -47,6 +47,7 @@ import { LoginComponent } from './login/login.component';
 import { EditContactDialogComponent } from './dashboard/contact-details/edit-contact-dialog.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,

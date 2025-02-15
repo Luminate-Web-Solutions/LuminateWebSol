@@ -146,6 +146,7 @@ button[type="submit"] {
   align-items: center;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
   animation: float 2s infinite;
+  margin-left: 10px;
 }
 
 .whatsapp-float img {
