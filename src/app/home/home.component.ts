@@ -61,15 +61,29 @@ export class HomeComponent {
    
   ];
 
-  next() {
-    this.currentIndex = (this.currentIndex + 1) % this.portfolioProjects.length;
+prev() {
+  if (this.currentIndex === 0) {
+    this.currentIndex = this.portfolioProjects.length - 1; // Go to last slide
+  } else {
+    this.currentIndex--;
   }
+}
 
-  prev() {
-    this.currentIndex = this.currentIndex === 0 ? 
-      this.portfolioProjects.length - 1 : this.currentIndex - 1;
+next() {
+  if (this.currentIndex === this.portfolioProjects.length - 1) {
+    this.currentIndex = 0; // Loop back to first slide
+  } else {
+    this.currentIndex++;
   }
+}
+
   showContent(contentType: string) {
     this.currentContent = contentType;
+  }
+
+  ngOnInit() {
+    setInterval(() => {
+      this.next();
+    }, 5000); // Slides every 3 seconds
   }
 }

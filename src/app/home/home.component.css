@@ -1128,3 +1128,8 @@ h2 {
 .footer {
   margin-top: auto; /* add this to make the footer stick to the bottom */
 }
+
+.portfolio-slide {
+  transition: transform 0.5s ease-in-out;
+}
+
