@@ -35,12 +35,6 @@ export class HomeComponent {
       link: 'https://professionalssummit.com/online/',
     },
     {
-      title: 'Luminate Web Solutions',
-      description: 'Luminate Web Solutions is a company offering expert web development services and digital transformation for businesses.',
-      image: './img.png',
-      link: 'https://luminatewebsol.com/',
-    },
-    {
       title: 'Eiddo Power',
       description: 'Luminate Web Solutions is a company offering expert web development services and digital transformation for businesses.',
       image: './Eiddo-Logo.png',
