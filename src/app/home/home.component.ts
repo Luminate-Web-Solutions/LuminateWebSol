@@ -23,9 +23,15 @@ export class HomeComponent {
   currentContent: string = 'digitalMarketing';
   portfolioProjects = [
     {
-      title: 'Skill Development HUB',
-      description: 'SD Hub website is a skills development hub aimed at empowering individuals by offering job-oriented training programs .',
-      image: 'sdhub.png',
+      title: 'Skill Development HUB Mehidipatnam',
+      description: 'SD Hub Mehidipatnam is a skills development hub aimed at empowering individuals by offering job-oriented training programs .',
+      image: 'sdhub-mp.jpg',
+      link: 'https://sdhub.in/',
+    },
+    {
+      title: 'Skill Development HUB Qutubshahi',
+      description: 'SD Hub Qutubshahi is a skills development hub aimed at empowering individuals by offering job-oriented training programs .',
+      image: 'sdhub-qs.jpg',
       link: 'https://sdhub.in/',
     },
     {
@@ -36,27 +42,33 @@ export class HomeComponent {
     },
     {
       title: 'Eiddo Power',
-      description: 'Luminate Web Solutions is a company offering expert web development services and digital transformation for businesses.',
+      description: 'Eiddo Power is a green power company ehich aims to lead the transition toward a cleaner, greener future by delivering innovative and sustainable energy solutions. ',
       image: './Eiddo-Logo.png',
       link: 'https://eiddopower.com/',
     },
     {
       title: 'Speed House Desgin',
-      description: 'Luminate Web Solutions is a company offering expert web development services and digital transformation for businesses.',
+      description: 'Speed House Desgin is a leading architectural designing company based in Dubai.',
       image: './Speed-House-logo.png',
       link: 'https://speedhousedesign.com',
     },
     {
       title: 'Lagom Interio',
-      description: 'Luminate Web Solutions is a company offering expert web development services and digital transformation for businesses.',
+      description: 'Lagom Interio is an interior desgin company that designs spaces that are perfectly balanced and functional, yet still beautiful and inviting. "lagom," the Swedish philosophy of "just the right amount."',
       image: './Lagom-logo.jpg',
       link: 'https://lagominterio.com/',
     },
     {
       title: 'XLNC Contracting',
-      description: 'Luminate Web Solutions is a company offering expert web development services and digital transformation for businesses.',
+      description: 'XLNC Contracting, established in Dubai in 2015, is a technical services company specializing in engineering solutions, including construction, fit-out works, and maintenance services, with a team bringing over 15 years of experience.',
       image: './XLNC-Logo.jpg',
       link: 'https://xlnccontracting.com/',
+    },
+    {
+      title: 'Zikra High School',
+      description: 'Zikra High School, established in 1983 in Hyderabad, is a co-educational institution managed by the Islamic Social Service Society, offering a holistic curriculum that emphasizes leadership, computer literacy, arts, and sports to prepare students as contributors to society.',
+      image: './zikra-logo.png',
+      link: 'https://zikrahighschool.com/',
     },
    
   ];
