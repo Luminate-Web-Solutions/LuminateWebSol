@@ -35,10 +35,16 @@ export class HomeComponent {
       link: 'https://sdhub.in/',
     },
     {
+      title: 'Aseem India',
+      description: 'ASEEM engages in advocacy / legal interventions, action research and empowerment of grass roots organizations and social workers in the Muslim Community to enable marginalized community to access government development programmes/ schemes and collectively demand, access and avail their rights from the government agencies.',
+      image: 'Aseem-logo.png',
+      link: 'https://professionalssummit.com/online/',
+    },
+    {
       title: 'Professional Summit',
       description: 'The Professionals Summit 2024 website for watching live event online.',
       image: 'PSF-Summit.png',
-      link: 'https://professionalssummit.com/online/',
+      link: 'https://aseemindia.org/',
     },
     {
       title: 'Eiddo Power',
@@ -96,6 +102,6 @@ next() {
   ngOnInit() {
     setInterval(() => {
       this.next();
-    }, 5000); // Slides every 3 seconds
+    }, 7000); // Slides every 3 seconds
   }
 }
