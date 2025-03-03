@@ -1129,7 +1129,57 @@ h2 {
   margin-top: auto; /* add this to make the footer stick to the bottom */
 }
 
-.portfolio-slide {
-  transition: transform 0.5s ease-in-out;
+.cta-section {
+  background-color: var(--primary-bg-color); /* Match portfolio section */
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 20px;
+  background-color: #e2e2e2;
 }
 
+.cta-section h2 {
+  color: var(--primary-text-color);
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.cta-section p {
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.cta-btn {
+  text-decoration: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  display: inline-block;
+  text-align: center;
+  min-width: 150px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn.inquiry {
+  background-color: #4682B4; /* Adjust to match portfolio */
+  color: #ffffff;
+  border: 2px solid #4682B4;
+}
+
+.cta-btn.contact {
+  background-color: #4682B4; /* Adjust to match portfolio */
+  color: #ffffff;
+  border: 2px solid #4682B4;
+}
+
+.cta-btn:hover {
+  opacity: 0.8;
+}

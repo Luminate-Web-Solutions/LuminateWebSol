@@ -48,8 +48,19 @@
 .social-icons {
   display: flex;
   gap: 15px;
-  width: auto;
-  height: 24px;
+  height: 30px;
+  width: 30px;
+}
+
+.social-icons a {
+  width: 30px;
+  height: 30px;
+}
+
+.social-icons img {
+  width: 34px;  /* Adjust to your preferred size */
+  height: 34px; /* Adjust to your preferred size */
+  object-fit: contain; /* Ensures the image scales correctly */
 }
 
 
