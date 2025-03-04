@@ -7,7 +7,7 @@
             <!-- <a routerLink="./login">Login</a> -->
             <h1>Expert Web Development Services for <br> Stunning Online Solutions |<span> Luminate Web
                     Solutions.</span></h1>
-            <p>Welcome visitors and briefly introduce your company’s <br> mission and focus on delivering web solutions.
+            <p>Welcome visitors and briefly introduce your company's <br> mission and focus on delivering web solutions.
             </p>
         </div>
         <div class="home-sub-container-img">
@@ -26,20 +26,12 @@
       <a href="/quote" class="cta-btn inquiry">&#9998; INQUIRY FORM</a>
       <a href="/contact" class="cta-btn contact">&#128222; CONTACT US</a>
     </div>
-  </section>
+</section>
 
 <div class="transformative">
     <h2>Inspiring and creating transformative change</h2>
     <p>We offering our clients unlock growth by focusing on three key solution areas:</p>
 </div>
-
-
-
-
-
-
-
-
 
 <div class="container">
     <!-- Buttons -->
@@ -207,7 +199,7 @@
                 <div class="cards-desc">
                     <div class="fw-bold">Website / App Maintanance</div>
                     <div>Your online assets are in safe hands, freeing you from the stress and frustration of
-                        self-management. Let’s start now</div>
+                        self-management. Let's start now</div>
                 <div class="cards-btn">
                     <a routerLink="./solutions" fragment="maintenance">Know More</a>
                 </div>
@@ -242,7 +234,7 @@
             <div>Our Digital Marketing Agency India will Make you Unique!</div>
             <div>Luminate Web Solutions embarked on a journey with a vision to revolutionize businesses through digital
                 transformation. We have earned global recognition for our entrepreneurial expertise and technical acumen
-                in the digital industry. With our motto “Be Digital and Do Digital” we assist SMEs in embracing digital
+                in the digital industry. With our motto "Be Digital and Do Digital" we assist SMEs in embracing digital
                 opportunities and navigating the digital landscape effortlessly.</div>
             <div>The Luminate Web Solutions Trust forms the bedrock of our foundation, providing SMEs with a stable and sustainable
                 platform to start their digital journey without too much of the usual heartache that typically comes
@@ -259,7 +251,7 @@
 <div class="slider-container">
     <h2>Our Success is driven by our Client Success</h2>
     
-    <div class="slider">
+    <div class="slider" (mouseenter)="pauseSlider()" (mouseleave)="resumeSlider()">
         <input type="radio" name="slide" id="slide1" checked>
         <input type="radio" name="slide" id="slide2">
         <input type="radio" name="slide" id="slide3">
@@ -338,13 +330,6 @@
     </div>
 </div>
 
-
-
-
-
-
-
-
 <div class="services">
     <div class="service-card">
         <div class="icon">⚡</div>
@@ -383,8 +368,6 @@
     </div>
 </div>
 
-
-
 <section class="portfolio-section">
     <div class="portfolio-header">
       <h2>Portfolio</h2>
@@ -393,11 +376,11 @@
   
     <div class="slider-container">
       <button class="nav-button prev" (click)="prev()">
-        <mat-icon>chevron_left</mat-icon>
+        <span>❮</span>
       </button>
   
-      <div class="portfolio-slide" [@slideAnimation]="currentIndex">
-        <div class="project-content">
+      <div class="portfolio-slide" [@slideAnimation]="currentIndex" (mouseenter)="pausePortfolioSlider()" (mouseleave)="resumePortfolioSlider()">
+        <div class="project-content"> 
           <div class="project-image">
             <img [src]="portfolioProjects[currentIndex].image" 
                  [alt]="portfolioProjects[currentIndex].title">
@@ -405,19 +388,21 @@
           <div class="project-info">
             <h3>{{portfolioProjects[currentIndex].title}}</h3>
             <p>{{portfolioProjects[currentIndex].description}}</p>
+            <div class="project-technologies">
+              <span class="tech-tag" *ngFor="let tech of portfolioProjects[currentIndex].technologies">{{tech}}</span>
+            </div>
             <a [href]="portfolioProjects[currentIndex].link" 
                class="view-website" 
                target="_blank">
-              <mat-icon>launch</mat-icon>
+              <span>🔗</span>
               View Website
             </a>
           </div>
         </div>
       </div>
-    
   
       <button class="nav-button next" (click)="next()">
-        <mat-icon>chevron_right</mat-icon>
+        <span>❯</span>
       </button>
   
       <div class="pagination">
@@ -427,24 +412,54 @@
               (click)="currentIndex = i">
         </span>
       </div>
-
-      <section class="cta-section">
-        <h2>Want to learn more about our Web services?</h2>
-        <p>Our guaranteed results will make your investment will give you a great return.</p>
-        <div class="cta-buttons">
-          <a href="/quote" class="cta-btn inquiry">&#9998; INQUIRY FORM</a>
-          <a href="/contact" class="cta-btn contact">&#128222; CONTACT US</a>
-        </div>
-      </section>
-
-      
     </div>
-  </section>
-  <a href="https://wa.me/917207367455" target="_blank" class="whatsapp-float">
-    <img src="./whatsapp.png" alt="WhatsApp">
-  </a> 
-  <div class="footer">
-    <app-footer />
+</section>
+
+<!-- Call to Action Section above chatbot -->
+<section class="cta-section project-showcase">
+  <h2>Our Web Development Process</h2>
+  <p>At Luminate Web Solutions, we've developed and deployed over 100+ websites and applications for clients across various industries. Our proven development process ensures high-quality, responsive, and user-friendly digital solutions.</p>
+  <div class="process-steps">
+    <div class="process-step">
+      <div class="step-number">1</div>
+      <div class="step-content">
+        <h3>Discovery & Planning</h3>
+        <p>We analyze your requirements, target audience, and business goals to create a comprehensive project roadmap.</p>
+      </div>
+    </div>
+    <div class="process-step">
+      <div class="step-number">2</div>
+      <div class="step-content">
+        <h3>Design & Prototyping</h3>
+        <p>Our designers create visually appealing mockups and interactive prototypes for your approval.</p>
+      </div>
+    </div>
+    <div class="process-step">
+      <div class="step-number">3</div>
+      <div class="step-content">
+        <h3>Development</h3>
+        <p>Our expert developers build your solution using the latest technologies and best practices.</p>
+      </div>
+    </div>
+    <div class="process-step">
+      <div class="step-number">4</div>
+      <div class="step-content">
+        <h3>Testing & Launch</h3>
+        <p>We thoroughly test your website or application before deploying it to production.</p>
+      </div>
+    </div>
+  </div>
+  <div class="cta-buttons">
+    <a href="/quote" class="cta-btn inquiry">&#9998; REQUEST A QUOTE</a>
+    <a href="/contact" class="cta-btn contact">&#128222; SCHEDULE A CONSULTATION</a>
+  </div>
+</section>
+
+<a href="https://wa.me/917207367455" target="_blank" class="whatsapp-float">
+  <img src="./whatsapp.png" alt="WhatsApp">
+</a> 
+
+<div class="footer">
+  <app-footer />
 </div>
 <!-- <app-chat-widget></app-chat-widget> -->
- 
