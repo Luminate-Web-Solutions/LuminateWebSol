@@ -76,7 +76,7 @@ a:hover {
 }
 
 .quote-button:hover {
-    background-color: #4682B4;
+    /* background-color: #4682B4; */
     color: #fff;
     transform: scale(1.05);
 }
