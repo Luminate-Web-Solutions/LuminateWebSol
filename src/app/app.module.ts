@@ -45,6 +45,7 @@ import { ContactDetailsComponent } from './dashboard/contact-details/contact-det
 import { QuoteDetailsComponent } from './dashboard/quote-details/quote-details.component';
 import { LoginComponent } from './login/login.component';
 import { EditContactDialogComponent } from './dashboard/contact-details/edit-contact-dialog.component';
+import { CtaFloatComponent } from './cta-float/cta-float.component';
 
 
 
@@ -68,7 +69,8 @@ import { EditContactDialogComponent } from './dashboard/contact-details/edit-con
     ContactDetailsComponent,
     QuoteDetailsComponent,
     LoginComponent,
-    EditContactDialogComponent
+    EditContactDialogComponent,
+    CtaFloatComponent
     
     
   ],
