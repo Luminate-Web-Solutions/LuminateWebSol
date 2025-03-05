@@ -4,6 +4,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f0f8ff;
     overflow-x: hidden;
+    
 }
 
 /* Solutions Page */
@@ -11,6 +12,7 @@ body {
     width: 100%;
     padding: 20px;
     background-color: #f9f9f9;
+    margin-top: 65px; /* Add margin to prevent overlap with the navbar */
 }
 
 /* Page Header */

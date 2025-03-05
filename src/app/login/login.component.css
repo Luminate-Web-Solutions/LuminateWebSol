@@ -7,6 +7,7 @@ body {
     height: 100vh;
     margin: 0;
     animation: backgroundAnimation 10s infinite alternate;
+    
 }
 
 @keyframes backgroundAnimation {
@@ -23,6 +24,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 20px;
+    margin-top: 85px
 }
 
 .animated-iframe {
