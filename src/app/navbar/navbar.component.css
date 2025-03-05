@@ -64,22 +64,31 @@ a:hover {
 
 /* Quote button styling */
 .quote-button {
-    background-color: #fff;
-    /* color: #4682B4; */
-    padding: 12px 20px;
+    background: #4682B4; /* Primary color */
+    color: white; /* Ensures text is readable */
+    font-weight: bold; /* Makes text more prominent */
+    padding: 12px 25px;
     font-size: 16px;
-    border-radius: 30px;
+    border-radius: 8px;
     text-transform: uppercase;
     text-align: center;
-    /* transition: background-color 0.3s ease, transform 0.3s ease; */
-    font-weight: 501;
+    display: inline-block;
+    border: none; /* Removes any unwanted borders */
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
 
-.quote-button:hover {
-    background-color: #fff !important;
-    color: inherit !important;
-    transform: none !important;
+/* .quote-button:hover {
+    background: #154d7a; 
+    transform: scale(1.05); 
+} */
+
+@media (max-width: 768px) {
+    .quote-button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
 }
+
 
 
 /* .quote-button:hover {
