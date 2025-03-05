@@ -1,59 +1,60 @@
 .floating-contact-widget {
-    position: fixed;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    z-index: 1100;
-    gap: 2px;
-  }
-  
-  .contact-item {
-    position: relative;
-    background-color: #4682B4; /* Adjust to match your theme */
-    padding: 10px;
-    border-radius: 8px 0 0 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-    transition: width 0.3s ease-in-out;
-  }
-  
-  .contact-item img {
-    width: 24px;
-    height: 24px;
-  }
-  
-  .contact-item .contact-text {
-    position: absolute;
-    right: 60px;
-    background: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 14px;
-    white-space: nowrap;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease-in-out, visibility 0.3s;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
-  }
-  
-  .contact-item:hover {
-    width: 180px;
-    justify-content: flex-start;
-    padding-left: 15px;
-  }
-  
-  .contact-item:hover .contact-text {
-    opacity: 1;
-    visibility: visible;
-  }
-  
-  .floating-icon{
-    color: white;
-  }
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 1100;
+  gap: 5px; /* Increased spacing for better visibility */
+}
+
+.contact-item {
+  position: relative;
+  background-color: #4682B4; /* Adjust to match your theme */
+  padding: 10px;
+  border-radius: 8px 0 0 8px;
+  display: flex;
+  align-items: center;
+  width: 50px; /* Default width for icon only */
+  height: 50px;
+  cursor: pointer;
+  transition: width 0.3s ease-in-out;
+  text-decoration: none;
+  overflow: hidden; /* Ensures text doesn’t show before hover */
+  white-space: nowrap;
+  color: white;
+}
+
+.contact-item:hover {
+  width: 250px; /* Expand width on hover */
+  justify-content: flex-start;
+}
+
+.contact-item .floating-icon {
+  color: white;
+  font-size: 24px; /* Set size */
+  width: 32px; /* Increase width */
+  height: 32px; /* Increase height */
+  display: flex; /* Center icon */
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0; /* Prevents icon from shrinking */
+}
+
+/* Text should be hidden by default */
+.contact-item .contact-text {
+  margin-left: 12px; /* Space between icon and text */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s;
+  color: white;
+  font-size: 16px;
+}
+
+/* Show text on hover */
+.contact-item:hover .contact-text {
+  opacity: 1;
+  visibility: visible;
+}

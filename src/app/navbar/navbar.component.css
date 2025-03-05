@@ -65,21 +65,28 @@ a:hover {
 /* Quote button styling */
 .quote-button {
     background-color: #fff;
-    color: #4682B4;
+    /* color: #4682B4; */
     padding: 12px 20px;
     font-size: 16px;
     border-radius: 30px;
     text-transform: uppercase;
     text-align: center;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    /* transition: background-color 0.3s ease, transform 0.3s ease; */
     font-weight: 501;
 }
 
 .quote-button:hover {
-    /* background-color: #4682B4; */
+    background-color: #fff !important;
+    color: inherit !important;
+    transform: none !important;
+}
+
+
+/* .quote-button:hover {
+    background-color: #4682B4;
     color: #fff;
     transform: scale(1.05);
-}
+} */
 
 /* Animation for fading in */
 @keyframes fadeIn {
