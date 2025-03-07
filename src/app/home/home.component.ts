@@ -38,7 +38,7 @@ export class HomeComponent {
       title: 'Skill Development HUB Qutubshahi',
       description: 'For SD Hub Qutubshahi, we created a custom website with an integrated course management system, online application process, and mobile-friendly interface. The site features a clean, professional design that highlights their training programs and success stories.',
       image: 'sdhub-qs.jpg',
-      link: 'https://sdhub.in/',
+      link: 'https://sdhubqutubshahi.com/',
       technologies: ['HTML5', 'CSS3', 'JavaScript', 'Bootstrap' , 'Angular.JS' , 'Node.JS' , 'MySQL']
     },
     {
