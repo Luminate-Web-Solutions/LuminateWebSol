@@ -28,8 +28,8 @@ export class HomeComponent {
   
   portfolioProjects = [
     {
-      title: 'Skill Development HUB Mehidipatnam',
-      description: 'We developed a comprehensive website for SD Hub Mehidipatnam featuring course listings, registration forms, and a student portal. The site includes responsive design and SEO optimization to increase visibility for their job-oriented training programs.',
+      title: 'Skill Development HUB Mehdipatnam',
+      description: 'We developed a comprehensive website for SD Hub Mehdipatnam featuring course listings, registration forms, and a student portal. The site includes responsive design and SEO optimization to increase visibility for their job-oriented training programs.',
       image: 'sdhub-mp.jpg',
       link: 'https://sdhub.in/',
       technologies: ['HTML5', 'CSS3', 'JavaScript', 'Bootstrap' , 'Angular.JS' , 'Node.JS' , 'MySQL']
@@ -95,8 +95,8 @@ export class HomeComponent {
   // Our portfolio project descriptions
   projectDescriptions = [
     {
-      title: 'Skill Development HUB Mehidipatnam',
-      description: 'We developed a comprehensive website for SD Hub Mehidipatnam featuring course listings, registration forms, and a student portal. The site includes responsive design and SEO optimization to increase visibility for their job-oriented training programs. Our team implemented a custom content management system allowing staff to easily update course information and manage student applications.'
+      title: 'Skill Development HUB Mehdipatnam',
+      description: 'We developed a comprehensive website for SD Hub Mehdipatnam featuring course listings, registration forms, and a student portal. The site includes responsive design and SEO optimization to increase visibility for their job-oriented training programs. Our team implemented a custom content management system allowing staff to easily update course information and manage student applications.'
     },
     {
       title: 'Skill Development HUB Qutubshahi',
